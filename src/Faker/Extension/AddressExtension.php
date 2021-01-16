@@ -20,7 +20,7 @@ interface AddressExtension extends Extension
     /**
      * @example 86039-9874
      */
-    public static function postcode(): string;
+    public function postcode(): string;
 
     /**
      * @example 'Crist Parks'

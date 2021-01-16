@@ -10,5 +10,5 @@ interface CountryExtension extends Extension
     /**
      * @example 'Japan'
      */
-    public static function country(): string;
+    public function country(): string;
 }
