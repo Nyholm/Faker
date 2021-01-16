@@ -8,13 +8,29 @@ namespace Faker\Extension;
 interface AddressExtension extends Extension
 {
     /**
+     * @example '791 Crist Parks, Sashabury, IL 86039-9874'
+     */
+    public function address(): string;
+
+    /**
      * Randomly return a real city name.
      */
-    public function cityName(): string;
+    public function city(): string;
 
-    public function streetSuffixWord(): string;
+    /**
+     * @example 86039-9874
+     */
+    public static function postcode(): string;
 
-    public function streetPrefix(): string;
+    /**
+     * @example 'Crist Parks'
+     */
+    public function streetName(): string;
+
+    /**
+     * @example '791 Crist Parks'
+     */
+    public function streetAddress(): string;
 
     /**
      * Randomly return a building number.

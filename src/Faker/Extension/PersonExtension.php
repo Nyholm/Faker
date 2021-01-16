@@ -13,9 +13,18 @@ interface PersonExtension extends Extension
     /**
      * @param string|null $gender 'male', 'female' or null for any
      *
+     * @return string
+     *
+     * @example 'John Doe'
+     */
+    public function name(?string $gender = null);
+
+    /**
+     * @param string|null $gender 'male', 'female' or null for any
+     *
      * @example 'John'
      */
-    public function firstName($gender = null): string;
+    public function firstName(?string $gender = null): string;
 
     public function firstNameMale(): string;
 
@@ -31,7 +40,7 @@ interface PersonExtension extends Extension
      *
      * @param string|null $gender 'male', 'female' or null for any
      */
-    public function title($gender = null): string;
+    public function title(?string $gender = null): string;
 
     /**
      * @example 'Mr.'
