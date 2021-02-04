@@ -67,7 +67,7 @@ Faker is using [Semver](https://semver.org/). This means that versions are tagge
 with MAJOR.MINOR.PATCH. Only a new major version will be allowed to break backward
 compatibility (BC).
 
-Classes marked as `@experimental` or `@internal` is not included in the BC promise.
+Classes marked as `@experimental` or `@internal` are not included in our backward compatibility promise.
 You are also not guaranteed that the value returned from a method is always the
 same. You are guaranteed that the data type will not change.
 
